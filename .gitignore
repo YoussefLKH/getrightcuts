@@ -1,0 +1,5 @@
+node_modules/
+.env
+data/bookings.json
+MIKE_PASSWORD.txt
+password.txt

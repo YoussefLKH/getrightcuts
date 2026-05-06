@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Right Cuts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ─── DEMO BANNER ──────────────────────────────────────── -->
+  <div class="demo-banner" id="demoBanner">
+    <span>🚧 <strong>Demo Mode</strong> — Awaiting barbershop owner approval to go live. SMS is disabled. &nbsp;|&nbsp; Admin login: <code>getrightcuts123</code></span>
+    <button onclick="document.getElementById('demoBanner').style.display='none'" class="demo-close">✕</button>
+  </div>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="nav-logo">GRC</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#booking">Book Now</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="/admin" class="btn-admin">Admin Login</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-pre">Welcome to</p>
+      <h1 class="hero-title">Get Right Cuts</h1>
+      <div class="gold-divider"></div>
+      <p class="hero-tagline">Get Right. Or Get Left Behind.</p>
+      <a href="#booking" class="btn-gold">Book Your Cut</a>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT STRIP ──────────────────────────────────────── -->
+  <section class="about-strip">
+    <div class="strip-item">
+      <i class="fas fa-scissors"></i>
+      <span>Precision Cuts</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <i class="fas fa-clock"></i>
+      <span>Mon – Sat, 9AM – 6PM</span>
+    </div>
+    <div class="strip-divider"></div>
+    <div class="strip-item">
+      <i class="fas fa-star"></i>
+      <span>Top Tier Service</span>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ──────────────────────────────────────────── -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <p class="section-pre">The Work</p>
+      <h2 class="section-title">Fresh Out The Chair</h2>
+      <div class="gold-divider centered"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/photo1.jpg" alt="Cut 1" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo2.jpg" alt="Cut 2" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo3.jpg" alt="Cut 3" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo4.jpg" alt="Cut 4" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo5.jpg" alt="Cut 5" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo6.jpg" alt="Cut 6" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo7.jpg" alt="Cut 7" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/photo8.jpg" alt="Cut 8" onerror="this.parentElement.classList.add('placeholder')"/>
+        <div class="gallery-overlay">
+          <i class="fas fa-scissors"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BOOKING ──────────────────────────────────────────── -->
+  <section class="booking-section" id="booking">
+    <div class="section-header">
+      <p class="section-pre">Reserve Your Spot</p>
+      <h2 class="section-title">Book A Cut</h2>
+      <div class="gold-divider centered"></div>
+    </div>
+
+    <div class="booking-container">
+      <form class="booking-form" id="bookingForm">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="(555) 555-5555" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service</label>
+          <select id="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Fresh Fade">Fresh Fade</option>
+            <option value="Skin Fade">Skin Fade</option>
+            <option value="Classic Haircut">Classic Haircut</option>
+            <option value="Lineup / Edge Up">Lineup / Edge Up</option>
+            <option value="Beard Trim & Shape">Beard Trim & Shape</option>
+            <option value="Full Beard Sculpt">Full Beard Sculpt</option>
+            <option value="Kid's Cut">Kid's Cut</option>
+            <option value="Hair + Beard Combo">Hair + Beard Combo</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Available Times</label>
+            <select id="time" required disabled>
+              <option value="" disabled selected>Pick a date first</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-note" id="formNote"></div>
+
+        <button type="submit" class="btn-gold full-width" id="submitBtn">
+          Request Appointment
+        </button>
+
+      </form>
+
+      <div class="booking-success" id="bookingSuccess">
+        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+        <h3>You're Almost In The Chair!</h3>
+        <p>Check your phone — we just sent you a text. Reply <strong>CONFIRM</strong> to lock in your spot.</p>
+        <button class="btn-gold" onclick="resetForm()">Book Another</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT / FOOTER ─────────────────────────────────── -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-logo">Get Right Cuts</div>
+      <div class="gold-divider centered"></div>
+      <p class="footer-tagline">Get Right. Or Get Left Behind.</p>
+
+      <div class="footer-info">
+        <div class="footer-item">
+          <i class="fas fa-phone"></i>
+          <span class="phone-placeholder">Phone Number Coming Soon</span>
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-clock"></i>
+          <span>Mon – Sat &nbsp;|&nbsp; 9AM – 6PM</span>
+        </div>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/getrightcuts_/" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+          <span>@getrightcuts_</span>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2024 Get Right Cuts. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
